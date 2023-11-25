@@ -1,0 +1,297 @@
+/*---------------------- header -------------------*/
+
+body {
+    background-color: #ebebeb;
+}
+header {
+    background-color: #EAC926; 
+    font-family: roboto;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+
+ 
+}
+/*imagenes*/
+
+.img-logo {
+    width: 50%;
+
+}
+
+.img-banner {
+    max-width: 100%;
+    height: auto;
+  }
+
+ 
+/*<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">*/
+.tipografia {
+    font-family: roboto
+}
+
+/*Tamaños Tipográficos*/
+
+h2.tituloCentrado {
+    text-align: center
+}
+
+/*iconos*/
+
+.fa-magnifying-glass {
+    color: #080808;
+    height: 20px;
+    padding: 7px;
+    background-color: #ebebeb;
+    margin-top: 60px
+
+}
+
+.fa-arrow-right-to-bracket {
+    color: #080808
+}
+.fa-basket-shopping {
+    color: #080808
+}
+.fa-bars {
+    color: white;
+    background-color: #03264C;
+    padding: 5px;
+}
+
+
+.flex-logo {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: #222222;
+}
+
+
+
+.burger-menu{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    max-width: 100%;
+
+}
+
+.busqueda {
+    width: 50%;
+    height: 10px;
+    padding: 10px;
+    align-items: center;
+    margin-top: 60px;
+    flex-grow: 1;
+}
+
+.lista-horizon {
+    display: none;
+}
+
+
+/* ------------------------------ main ------------------------------ */
+main {
+    background-color: #ebebeb;
+    
+}
+
+.titulares {
+    font-size: 24px bold
+    
+}
+
+.precios {
+    font-size: 18px
+    
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a
+}
+
+.descripciones {
+    font-size: 16px
+}
+.desc-articulo {
+    display:none
+}
+
+/*style icons*/
+
+.fa-hand-holding-dollar {
+    color: #080808;
+    size: 12em
+}
+.fa-address-card {
+    color: #080808;
+    size: 12em
+}
+
+.fa-truck {
+    color: #39b54a;
+    text-align: center;
+    transition: 450ms;
+    /*en el div del camion:
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+    en el hover: 
+    transform: rotate(-90deg); */
+
+     
+}
+
+.borde-truck {
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    padding: 3px 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position:  relative;
+    left: 180px;
+    bottom: 25px   
+    
+
+}
+
+/*imagenes*/
+.img-producto {
+    width: 90%; 
+}
+
+/*propiedades contenedores*/
+
+.section-product {
+    text-align: center;
+    max-width: 95%;
+    padding: 20px;
+    font-family: roboto;
+    box-sizing: border-box;
+    flex-grow: initial;
+    
+    
+     
+ }
+ .section-ofertas {
+    text-align: center;
+    max-width: 90%;
+    padding: 20px;
+    font-family: roboto;
+    box-sizing: border-box ;
+         
+ }
+
+ .art-prod {
+    text-align:center;
+    margin: 10px;
+    background-color: white;
+    width: 90%
+  
+ }
+
+ /* media querys*/
+
+ @media (min-width:760px) {
+    .art-prod {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.lista-horizon {
+    
+    align-items: center;
+    margin: 0;
+    padding: 1px 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+ 
+}
+
+.lista-ofertas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+.lista-opc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.art-prod {
+     width: 31%
+  }
+  .section-product {
+    display: flex;
+    flex-wrap: wrap
+  }
+ }
+
+ @media (min-width:460px) {
+
+    .burger-menu {
+        display: none;
+     }
+    .desc-articulo {
+        display:block
+    }
+
+    .art-prod {
+        width: 22%
+     }
+     .section-product {
+        display: flex;
+        flex-wrap: wrap
+      }
+ }
+ 
+
+
+
+
+
+ /* caja hija de art-prod*/
+ .detalle-valor-prod {
+    text-align:center;
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    padding: 15px
+ }
+
+ /* ----------------------Footer------------------------*/
+ .pie-pag {
+    text-align: center;
+    font-family: roboto;
+    background-color: white;
+    width: 100%;
+ }
+
+.art-footer {
+    margin-bottom: 30px;
+}
+.pie-pag {
+    margin-top: 30px
+}
+
+/* iconos footer */
+
+.fa-credit-card {
+    margin-bottom: 10px;
+    color: #080808;
+
+}

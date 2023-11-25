@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/register.css" rel="stylesheet" />
+    <link href="https://fontawesome.com/kits/6d8f4157fd/icons" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+    <title>Mercado Liebre-Register</title>
+    
+</head>
+<body>
+    <header>
+        <div class="flex-logo"><img src="/img/logo-mercado-liebre.svg"></div>
+        <div class="busqueda">
+            <input type="text" placeholder="Buscar productos..."><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="link-compra"><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de crédito</div>
+        
+    </header>
+
+    <main>
+        <!--creacion del formulario-->
+        <form action="/register" method="POST">
+
+     <section class="contenedor-main">
+        <article>
+            <div class="interline"><input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" required></div>
+            <div class="interline"><input type="text" name="nomUsuario" id="nomUsuario" placeholder="Nombre de usuari@" required></div>
+            <div class="interline"><input type="email" name="email" id="email" placeholder="email"></div>
+        </article>
+        <article>
+            <div><h3>Fecha de nacimiento</h3></div>
+            <div><input type="date" name="date" id="date" placeholder="dd/mm/yyyy"></div>
+            <div><input type="text" name="domicilio" id="domicilio" placeholder="Domicilio"></div>
+        </article>
+        <article>
+            <div class="interline"><h3>Perfil del usuario</h3>
+                <label>Comprador<input type="radio" name="perfil" values="comprador" checked></label>
+                <label>Vendedor<input type="radio" name="perfil" values="vendedor"></label>
+            </div>
+            <div class="interline"><label>Categorías de interés</label>
+                <div><input type="checkbox" name="categoria" value="electro" checked><label>Electro</label></div>
+                <div><input type="checkbox" name="categoria" value="moda">Moda<label>Moda</label></div>
+                <div><input type="checkbox" name="categoria" value="hogar">Hogar<label>Hogar</label></div>
+                <div><input type="checkbox" name="categoria" value="jugueteria"><label>Juguetería</label></div>
+                <div><input type="checkbox" name="categoria" value="vidasana"><label>Vida sana</label></div>
+            </div>
+        </article>
+            <label>Foto de usuario</label>
+            <label>Contraseña</label>
+            <label>Confirmar contraseña</label>
+            <button>Enviar</button>
+            <button>Borrar</button>
+
+        </section>
+
+        </form>
+
+
+    </main>
+</body>
+<main>
+
+</main>
+</html>
