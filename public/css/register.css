@@ -35,18 +35,26 @@ main {
     background-color: #ebebeb;
 }
 .interline {
-    padding: 5px
+    padding: 5px;
+    margin-bottom: 15px
+    
+}
+.button-style {
+    margin-bottom: 15px;
+    padding: 15px; 
+    border-radius: 5px;
+    font-style: italic; 
+    background-color: blue;
+    color: #fff;
 }
 
 .contenedor-main {
-    background-color: white;
-    max-width: 40%;
-    border: solid 1px black;
+    background-color: #ebebeb;
+    width: 40%;
+    border-radius: 4px;
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
     position: relative;
-    left: 30%
-
-
+   
 }

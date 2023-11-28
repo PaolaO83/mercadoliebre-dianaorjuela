@@ -21,7 +21,7 @@
 
     <main>
         <!--creacion del formulario-->
-        <form action="/register" method="POST">
+        <form action="/register.html" method="POST">
 
      <section class="contenedor-main">
         <article>
@@ -31,30 +31,31 @@
         </article>
         <article>
             <div><h3>Fecha de nacimiento</h3></div>
-            <div><input type="date" name="date" id="date" placeholder="dd/mm/yyyy"></div>
-            <div><input type="text" name="domicilio" id="domicilio" placeholder="Domicilio"></div>
+            <div class="interline"><input type="date" name="date" id="date" placeholder="dd/mm/yyyy"></div>
+            <div class="interline"><input type="text" name="domicilio" id="domicilio" placeholder="Domicilio"></div>
         </article>
         <article>
             <div class="interline"><h3>Perfil del usuario</h3>
                 <label>Comprador<input type="radio" name="perfil" values="comprador" checked></label>
                 <label>Vendedor<input type="radio" name="perfil" values="vendedor"></label>
             </div>
-            <div class="interline"><label>Categorías de interés</label>
-                <div><input type="checkbox" name="categoria" value="electro" checked><label>Electro</label></div>
-                <div><input type="checkbox" name="categoria" value="moda">Moda<label>Moda</label></div>
-                <div><input type="checkbox" name="categoria" value="hogar">Hogar<label>Hogar</label></div>
-                <div><input type="checkbox" name="categoria" value="jugueteria"><label>Juguetería</label></div>
-                <div><input type="checkbox" name="categoria" value="vidasana"><label>Vida sana</label></div>
-            </div>
+            <div class="interline"><label>Categorías de interés:</label>
+                <select name="categoria">
+                    <option value="electro">Electro</option> 
+                    <option value="moda">Moda<label>Moda</option> 
+                    <option value="hogar">Hogar</option> 
+                    <option value="jugueteria">Juguetería</option> 
+                    <option value="vidasana">Vida sana</option> 
+                </select>
         </article>
             <label>Foto de usuario</label>
-            <div><input type="file" name="foto" accept=".jpg"></div>
+            <div class="interline"><input type="file" name="foto" accept=".jpg"></div>
             <label>Contraseña</label>
-            <div><input type="password" name="contrasena" value="contrasena"></div>
+            <div class="interline"><input type="password" name="contrasena" value="contrasena"></div>
             <label>Confirmar contraseña</label>
-            <div><input type="password" name="contrasena" value="contrasena"></div>
-            <button type="submit">Enviar</button>
-            <button type="reset">Borrar</button>
+            <div class="interline"><input type="password" name="contrasena" value="contrasena"></div>
+            <button type="submit" class="button-style">Enviar</button>
+            <button type="reset" class="button-style">Borrar</button>
 
         </section>
 
